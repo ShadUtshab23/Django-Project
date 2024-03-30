@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('imgs/—Pngtree—color\ tennis\ sport\ advertising\ background_970644.jpg');
+            /* Background image for the entire page */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .login-container {
+            background-image: url('imgs/—Pngtree—color\ tennis\ sport\ advertising\ background_970644.jpg');
+            position: relative;
+            width: 300px;
+            /* Adjust the width as needed */
+            height: 300px;
+            /* Adjust the height as needed */
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Shadow effect */
+            opacity: 0;
+            /* Initially hide the container */
+            animation: fadeIn 0.5s ease-in-out forwards;
+            /* Fade-in animation with delay */
+            animation-delay: 0.5s;
+            /* Delay before the animation starts */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .login-container h2 {
+            text-align: center;
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-container form input[type="text"],
+        .login-container form input[type="password"],
+        .login-container form button {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container form button {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-container form button:hover {
+            background-color: #0056b3;
+        }
+
+        .typing-animation {
+            overflow: hidden;
+            white-space: nowrap;
+            display: inline-block;
+            animation: typing 2s steps(14) forwards;
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="color: #eb0000; font-size: 36px;" class="typing-animation">SPORTS PARADISE</h1>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
